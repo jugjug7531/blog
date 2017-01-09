@@ -3,21 +3,30 @@
 <head>
   <meta charset="utf-8">
   
-  <title>faviconの設定 | ものブロ</title>
+  <title>各ブログ記事すべてにfaviconを設定する | ものブロ</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="faviconブログのトップページにfaviconを設定することはサクッとできたが,すべての記事にfaviconを設定するのに手間取った.
-1.">
+  <meta name="description" content="faviconまでのパスをきちんと通すブログのトップページにfaviconを設定することはサクッとできたが,すべての記事にfaviconを設定するのに手間取った.
+以下のようにやったら解決できた.
+
+publicフォルダにfavicon.icoを設置
+themes/landscape/_config.ymlに以下のように記述123# Miscellaneousgoogle_analytics:fa">
 <meta property="og:type" content="article">
-<meta property="og:title" content="faviconの設定">
+<meta property="og:title" content="各ブログ記事すべてにfaviconを設定する">
 <meta property="og:url" content="https://jugjug7531.github.io/2017/01/10/favicon-pass/index.html">
 <meta property="og:site_name" content="ものブロ">
-<meta property="og:description" content="faviconブログのトップページにfaviconを設定することはサクッとできたが,すべての記事にfaviconを設定するのに手間取った.
-1.">
-<meta property="og:updated_time" content="2017-01-09T16:43:23.000Z">
+<meta property="og:description" content="faviconまでのパスをきちんと通すブログのトップページにfaviconを設定することはサクッとできたが,すべての記事にfaviconを設定するのに手間取った.
+以下のようにやったら解決できた.
+
+publicフォルダにfavicon.icoを設置
+themes/landscape/_config.ymlに以下のように記述123# Miscellaneousgoogle_analytics:fa">
+<meta property="og:updated_time" content="2017-01-09T17:11:31.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="faviconの設定">
-<meta name="twitter:description" content="faviconブログのトップページにfaviconを設定することはサクッとできたが,すべての記事にfaviconを設定するのに手間取った.
-1.">
+<meta name="twitter:title" content="各ブログ記事すべてにfaviconを設定する">
+<meta name="twitter:description" content="faviconまでのパスをきちんと通すブログのトップページにfaviconを設定することはサクッとできたが,すべての記事にfaviconを設定するのに手間取った.
+以下のようにやったら解決できた.
+
+publicフォルダにfavicon.icoを設置
+themes/landscape/_config.ymlに以下のように記述123# Miscellaneousgoogle_analytics:fa">
   
     <link rel="alternate" href="/atom.xml" title="ものブロ" type="application/atom+xml">
   
@@ -84,7 +93,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      faviconの設定
+      各ブログ記事すべてにfaviconを設定する
     </h1>
   
 
@@ -92,8 +101,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="favicon"><a href="#favicon" class="headerlink" title="favicon"></a>favicon</h2><p>ブログのトップページにfaviconを設定することはサクッとできたが,<br>すべての記事にfaviconを設定するのに手間取った.</p>
-<p>1.</p>
+        <h2 id="faviconまでのパスをきちんと通す"><a href="#faviconまでのパスをきちんと通す" class="headerlink" title="faviconまでのパスをきちんと通す"></a>faviconまでのパスをきちんと通す</h2><p>ブログのトップページにfaviconを設定することはサクッとできたが,<br>すべての記事にfaviconを設定するのに手間取った.</p>
+<p>以下のようにやったら解決できた.</p>
+<ol>
+<li>publicフォルダにfavicon.icoを設置</li>
+<li>themes/landscape/_config.ymlに以下のように記述<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"># Miscellaneous</div><div class="line">google_analytics:</div><div class="line">favicon: ../../../../favicon.ico</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>各記事のhtmlファイルは<br>「public/(年)/(月)/(日)/(タイトル)/index.html」<br>にあるので,<br>「public/favicon.ico」<br>とすれば<br>favicon.icoは, index.htmlの４つ上の階層に存在することになる.  </p>
+<p>なので,テーマのconfigを先ほどのように書けば解決！</p>
+<p>ちなみに, publicフォルダにfavicon.icoを置いた時点で,<br>トップページのfavicon設置はできてるはずです.<br>(同ディレクトリ内にトップページのindex.htmlがあるため)</p>
+<p>いつまで経ってもパスを通すことには慣れませんなぁ…</p>
 
       
     </div>
@@ -171,7 +189,7 @@
       <ul>
         
           <li>
-            <a href="/blog.com/2017/01/10/favicon-pass/">faviconの設定</a>
+            <a href="/blog.com/2017/01/10/favicon-pass/">各ブログ記事すべてにfaviconを設定する</a>
           </li>
         
           <li>
